@@ -8,12 +8,12 @@ import "./navbar.css";
 
 function NavBar() {
   return (
-    <Navbar fixed="top" className="navbar" bg="light" variant="light">
+    <Navbar sticky="top" className="navbar" bg="light" variant="light">
       <Navbar.Brand href="#home">Tommy Boone</Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#about">About</Nav.Link>
-        <Nav.Link href="#projects">Previous Work</Nav.Link>
+        <Nav.Link href="#projects">Portfolio</Nav.Link>
         <Nav.Link href="#resumé">Resumé</Nav.Link>
       </Nav>
       <Form className="form inline my-2 my-lg-0">
