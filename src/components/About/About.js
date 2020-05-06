@@ -9,7 +9,7 @@ function About() {
           <p id="info1" class="info">
             Hello - Tommy here! I am Full-Stack Web Developer currently living
             in Minneapolis. I have experience with HTML, CSS, JavaScript, Node,
-            React, mySQL, noSQL, JSX, and several other programming languages.
+            React, SQL, JSX, and several other programming languages.
           </p>
         </div>
         <div className="col-xs-12 col sm-12 col-md-4 wow">
