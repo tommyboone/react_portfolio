@@ -1,21 +1,36 @@
 import React from "react";
-import Navbar from "./components/NavBar/navbar";
+import Header from "./components/Header/header";
 import Jumbotron from "./components/Jumbotron/jumbotron";
-import Footer from "./components/Footer/Footer"
-import Projects from "./components/Projects/Projects"
-import About from "./components/About/About"
-import Contact from "./components/Contact/Contact"
+import Footer from "./components/Footer/Footer";
+import Projects from "./components/Projects/Projects";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Jumbotron/>
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-
-    </div>
+    <Router>
+      <div>
+        <Switch />
+        <Route exact path={["", "/"]}>
+          <Header />
+          <Jumbotron />
+          <About />
+          <Projects />
+          <Footer />
+        </Route>
+        <Route exact path ={"/projects"}>
+          <Header />
+          <Projects />
+          <Footer />
+        </Route>
+        <Route exact path={"/contact"}>
+          <Header />
+          <Contact />
+          <Footer />
+        </Route>
+      </div>
+    </Router>
   );
 }
 
