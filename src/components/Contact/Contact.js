@@ -1,43 +1,79 @@
-import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
-import "./Contact.css"
-const Contact = () => {
-return (
-<MDBContainer className="contact-container">
-  <MDBRow>
-    <MDBCol md="12">
-      <form>
-        <p className="h4 text-center mb-4">Let's work together.</p>
-        <label htmlFor="defaultFormContactNameEx" className="grey-text">
-          Your name
-        </label>
-        <input type="text" id="defaultFormContactNameEx" className="form-control" />
-        <br />
-        <label htmlFor="defaultFormContactEmailEx" className="grey-text">
-          Your email
-        </label>
-        <input type="email" id="defaultFormContactEmailEx" className="form-control" />
-        <br />
-        <label htmlFor="defaultFormContactSubjectEx" className="grey-text">
-          Subject
-        </label>
-        <input type="text" id="defaultFormContactSubjectEx" className="form-control" />
-        <br />
-        <label htmlFor="defaultFormContactMessageEx" className="grey-text">
-          Your message
-        </label>
-        <textarea type="text" id="defaultFormContactMessageEx" className="form-control" rows="3" />
-        <div className="text-center mt-4">
-                  <MDBBtn color="primary" outline type="submit">
-                    Send
-                    <MDBIcon far icon="paper-plane" className="ml-2" />
-                  </MDBBtn>
-                </div>
-              </form>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      );
-    };
+import React, { Component } from 'react';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
 
-    export default Contact;
+class Contact extends Component {
+    state = {
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    }
+
+    handleChange = e => {
+      const inputId = e.target.name;
+      const value = e.target.value;
+      this.setState({ [inputId]: value })
+   }
+
+    render(){
+      return (
+        <MDBContainer fluid className="contact-container">
+            <MDBRow>
+                <MDBCol md ="2" />
+                <MDBCol md='8'>
+                    <form action="mailto:tommyboone23@gmail.com" method="POST" encType="text/plain" className='hoverable' style={{ padding: 38 }}>
+                        <p className='h5 text-center mb-4'>Let's work together.</p>
+                        <div className='grey-text'>
+                            <MDBInput
+                                label='Your Name'
+                                name='name'
+                                value={this.state.name}
+                                onChange={this.handleChange}
+                                icon='user'
+                                group
+                                type='text'
+                            />
+                            <MDBInput
+                                label='E-mail address'
+                                icon='envelope'
+                                name='email'
+                                group
+                                value={this.state.email}
+                                onChange={this.handleChange}
+                                type='email'
+                            />
+                            <MDBInput
+                                label='Subject'
+                                name='subject'
+                                icon='tag'
+                                group
+                                type='text'
+                                value={this.state.subject}
+                                onChange={this.handleChange}
+                            />
+                            <MDBInput
+                                type='textarea'
+                                rows='2'
+                                value={this.state.message}
+                                onChange={this.handleChange}
+                                name='message'
+                                label='Your message...'
+                                icon='pencil-alt'
+                            />
+                        </div>
+                        <div className='text-center'>
+                            <MDBBtn outline color='blue' type="submit">
+                                Send <MDBIcon far icon='paper-plane' className='ml-2' />
+                            </MDBBtn>
+                        </div>
+                    </form>
+                </MDBCol>
+                <MDBCol md="2" />
+            </MDBRow>
+        </MDBContainer>
+    );
+    }
+
+};
+
+export default Contact;
