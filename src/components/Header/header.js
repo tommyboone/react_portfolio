@@ -8,8 +8,8 @@ import "./header.css";
 
 function Header() {
   return (
-    <MDBAnimation type="fadeInLeft" className="slow">
-      <Navbar sticky="top" className="navbar" bg="light" variant="light">
+    <MDBAnimation  type="fadeInLeft" className="slow sticky-top">
+      <Navbar className="navbar" bg="light" variant="light">
         <Navbar.Brand href="#home">
           <img
             src="./images/Profile_Pic.jpg"
