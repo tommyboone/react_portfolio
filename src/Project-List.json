@@ -1,0 +1,63 @@
+[{
+    "key":1,
+    "data":{
+          "title": "Quiz Game",
+    "description": "A full-stack quiz game application to help pass the time in quarantine. Utilizes a mySQL database, Node and Express, and the Materialize framework.",
+    "img": "./images/quiz-game.png",
+    "github":"https://github.com/kelly-bazella/Project-2",
+    "website":"https://gold-team-quiz.herokuapp.com/"
+    }
+  
+},
+{
+    "key":2,
+    "data":{
+    "title": "Team Profile Generator",
+    "description": "A node application to generate a short summary of team members, their role, and their contact info",
+    "img": "./images/team-profile.png",
+    "github":"https://github.com/tommyboone/Template_Engine-Employee_Summary"
+    }
+
+},{
+    "key":3,
+    "data":{
+    "title": "Travel Master",
+    "description": "A travel application where users can learn more about the places they are visiting",
+    "img": "./images/travel-master.png",
+    "github":"https://github.com/stevekindt/Project-1",
+    "website":"https://stevekindt.github.io/Project-1/"
+    }
+  
+},{
+    "key":4,
+    "data":{
+    "title": "Fitness Tracker",
+    "description": "A full-stack workout tracking application that allows users to view, create, and track daily workouts. Utilizes MongoDB with Mongoose, Node and Express, and the Semantic UI",
+    "img": "./images/Fitness_Tracker.png",
+    "github":"https://github.com/tommyboone/Workout-Tracker",
+    "website":"https://workout-tracker-tb.herokuapp.com/"
+    }
+  
+},{
+    "key":5,
+    "data":{
+    "title": "Budget Tracker",
+    "description": "A financial tracking application that allows users to enter transactions with or without an internet connection. This app was built using NodeJS, Express, Mongoose and MongoDB, and Compression, using the Bootstrap framework ",
+    "img": "./images/Budget_Tracker.png",
+    "github":"https://github.com/tommyboone/Budget-Tracker",
+    "website":"https://budget-tracker-tb.herokuapp.com/" 
+    }
+
+},{
+    "key":6,
+    "data":{
+    "title": "Note Taker",
+    "description": "A To-Do List style application that allows users to write and save tasks to be performed, and delete tasks once they've been completed. Built using an Express backend and Bootstrap framework",
+    "img": "./images/Note-Taker_App.png",
+    "github":"https://github.com/tommyboone/Note-Taker",
+    "website":"https://tommyboone.github.io/Note-Taker/"    
+    }
+ 
+}
+
+]
