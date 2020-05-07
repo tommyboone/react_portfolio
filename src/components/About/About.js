@@ -1,36 +1,82 @@
 import React from "react";
-import "./About.css"
+import { MDBContainer, MDBRow, MDBCol, MDBAnimation } from "mdbreact";
+import "./About.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHandPaper,
+  faGlobe,
+  faLaptop,
+  faTachometerAlt,
+  faMobileAlt,
+  faLightbulb,
+  faRocket,
+} from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
-    <div className="container about-container">
-      <div className="row ">
-        <div className="col-xs-12 col-sm-12 col-md-4 wow">
-          <p id="info1" class="info">
-            Hello - Tommy here! I am Full-Stack Web Developer currently living
-            in Minneapolis. I have experience with HTML, CSS, JavaScript, Node,
-            React, SQL, JSX, and several other programming languages.
+    <MDBContainer className="about-container">
+      <MDBAnimation reveal type="slideInLeft" className="">
+        <MDBRow>
+          <MDBCol>
+            {" "}
+            <FontAwesomeIcon icon={faHandPaper} className="fa-3x" />
+            <p id="info1" className="info">
+              Hello - Tommy here! I am Full-Stack Web Developer currently living
+              in Minneapolis. I have experience with HTML, CSS, JavaScript,
+              jQuery, CI platforms, templating engines, the MERN Stack, and
+              several other programming languages.{" "}
+            </p>
+          </MDBCol>
+          <MDBCol>
+            {" "}
+            <FontAwesomeIcon icon={faGlobe} className="fa-3x" />
+            <p id="info2" className="info">
+              I'm extremely passionate about web development and it's ability to
+              solve real-world problems.......... mOre StuFf HeRe LaTeR.....
+            </p>
+          </MDBCol>
+          <MDBCol>
+            <FontAwesomeIcon icon={faLaptop} className="fa-3x" />
+            <p id="info3" className="info">
+              Most Recently, I decided to expand my skill set by enrolling in
+              The Coding Bootcamp at the University of Minnesota. Currently
+              seeking a Full-Time Opportunity as a developer{" "}
+            </p>
+          </MDBCol>
+        </MDBRow>
+      </MDBAnimation>
+      <br />
+      <br />
+      <MDBAnimation reveal type="slideInRight" className="">
+      <MDBRow>
+        <MDBCol>
+          <FontAwesomeIcon icon={faTachometerAlt} className="fa-3x" />
+          <p id="skills1" className="skills">
+            Fast response times and quick page interaction
           </p>
-        </div>
-        <div className="col-xs-12 col sm-12 col-md-4 wow">
-          <p id="info2" class="info">
-            I have been in the fitness industry for the last 10 years working as
-            a personal trainer and head programmer for CrossFit affiliates. My
-            certifications include: CrossFit Level 3, Precision Nutrition, USAW
-            Weightlifting and Kettlebell Instructor. This has been a rewarding
-            career working with people from all walks of life to improve their
-            health and happiness.
+        </MDBCol>
+        <MDBCol>
+          <FontAwesomeIcon icon={faMobileAlt} className="fa-3x" />
+          <p id="skills2" className="skills">
+            Mobile-Responsive so you can view your app on any device
           </p>
-        </div>
-        <div className="col-xs-12 col-sm-12 col-md-4 wow">
-          <p id="info3" class="info">
-            Currently, I am expanding my skill set by enrolling in a Web
-            Development Bootcamp at the University of Minnesota. My hope is to
-            transition into a new career as a full stack developer.
+        </MDBCol>
+        <MDBCol>
+          <FontAwesomeIcon icon={faLightbulb} className="fa-3x" />
+          <p id="skills3" className="skills">
+            User friendly and Intuitive Design
           </p>
-        </div>
-      </div>
-    </div>
+        </MDBCol>
+        <MDBCol>
+          <FontAwesomeIcon icon={faRocket} className="fa-3x" />
+          <p id="skills4" className="skills">
+            Dynamic interfaces to keep users engaged.
+          </p>
+        </MDBCol>
+      </MDBRow>
+      </MDBAnimation>
+      
+    </MDBContainer>
   );
 }
 
