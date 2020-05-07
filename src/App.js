@@ -3,6 +3,7 @@ import Header from "./components/Header/header";
 import Jumbotron from "./components/Jumbotron/jumbotron";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
+import ProjectCard from "./components/Projects/Projects-Page"
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -21,7 +22,7 @@ function App() {
         </Route>
         <Route exact path ={"/projects"}>
           <Header />
-          <Projects />
+          <ProjectCard />
           <Footer />
         </Route>
         <Route exact path={"/contact"}>
