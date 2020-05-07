@@ -1,0 +1,13 @@
+.d-block{
+    height:700px;
+}
+.project-card{
+    border:1px solid darkgray;
+    box-shadow: 10px darkgray;
+    border-radius:75px;;
+}
+
+.card-title{
+    border-top: 1px solid darkgray;
+    padding-top:5px;
+}

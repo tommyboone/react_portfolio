@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectList from "../../Project-List.json";
+import "./Projects.css"
 import {
   MDBBtn,
   MDBContainer,
@@ -57,7 +58,7 @@ class ProjectCard extends React.Component {
           <MDBRow>
               <MDBCol md="4" />
             <MDBCol md="4">
-              <MDBCard wide cascade>
+              <MDBCard wide cascade className="project-card"> 
                 <MDBView cascade>
                   <MDBCardImage
                     hover
@@ -69,7 +70,7 @@ class ProjectCard extends React.Component {
                 </MDBView>
 
                 <MDBCardBody cascade className="text-center">
-                  <MDBCardTitle className="card-title">
+                  <MDBCardTitle className="card-title ">
                     <strong>{data.title}</strong>
                   </MDBCardTitle>
 
