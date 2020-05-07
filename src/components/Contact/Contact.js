@@ -8,6 +8,8 @@ import {
   MDBInput,
 } from "mdbreact";
 
+import "./Contact.css"
+
 class Contact extends Component {
   state = {
     name: "",
@@ -43,7 +45,7 @@ class Contact extends Component {
               className="hoverable"
               style={{ padding: 38 }}
             >
-              <p className="h5 text-center mb-4">Let's work together.</p>
+              <p className="h3 text-center mb-4">Let's work together.</p>
               <div className="grey-text">
                 <MDBInput
                   label="Your Name"
