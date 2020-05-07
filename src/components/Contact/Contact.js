@@ -6,8 +6,8 @@ import {
   MDBBtn,
   MDBIcon,
   MDBInput,
-} from "mdbreact";
 
+} from "mdbreact";
 import "./Contact.css"
 
 class Contact extends Component {
@@ -29,18 +29,18 @@ class Contact extends Component {
   render() {
   const sendEmail = (e) => {
     e.preventDefault();
-    return(
-       "mailto:tommyboone23@gmail.com"
-    ) 
+    // return(
+    //    "mailto:tommyboone23@gmail.com"
+    // ) 
   }
     return (
       <MDBContainer fluid className="contact-container">
         <MDBRow>
           <MDBCol md="2" />
           <MDBCol md="8">
-            <form
+            <form action="mailto:tommyboone23@gmail.com"
               onSubmit={sendEmail}
-              method="PUT"
+              method="POST"
               encType="text/plain"
               className="hoverable"
               style={{ padding: 38 }}
@@ -85,7 +85,7 @@ class Contact extends Component {
                 />
               </div>
               <div className="text-center">
-                <MDBBtn outline color="blue" type="submit">
+                <MDBBtn outline color="blue" type="submit" onClick={()=>{alert("Message Sent!")}}>
                   Send <MDBIcon far icon="paper-plane" className="ml-2" />
                 </MDBBtn>
               </div>
