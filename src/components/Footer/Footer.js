@@ -23,18 +23,15 @@ const Footer = () => {
             <ul>
               <li className="list-unstyled">
                 <a href="/">Home</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="/">About </a>
-              </li>
-              <li className="list-unstyled">
-                <a href="/contact">Contact</a>
-              </li>
+              </li> 
               <li className="list-unstyled">
                 <a href="/projects">Projects</a>
               </li>
-              <li className="list-unstyled">
-                <a href="#!">Resumé</a>
+               <li className="list-unstyled">
+                <a href="./images/Tommy-Boone-Resumé.pdf" target="_blank">Resumé</a>
+              </li>
+            <li className="list-unstyled">
+                <a href="/contact">Contact</a>
               </li>
            
             </ul>
