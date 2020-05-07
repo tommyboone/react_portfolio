@@ -72,42 +72,48 @@ const Projects = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                src="./images/Budget_Tracker.png"
                 alt="First slide"
               />
               <MDBMask overlay="black-strong" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Light mask</h3>
-              <p>Fourth text</p>
+              <h3 className="h3-responsive">Budget Tracker</h3>
+              <p>A financial tracking application that allows users to enter transactions with or without an internet connection.</p>
+              <MDBBtn gradient="blue" href="https://github.com/tommyboone/Budget-Tracker">GitHub</MDBBtn>
+              <MDBBtn gradient="blue" href="https://budget-tracker-tb.herokuapp.com/">Website</MDBBtn>
             </MDBCarouselCaption>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="5">
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                src="./images/Fitness_Tracker.png"
                 alt="Second slide"
               />
               <MDBMask overlay="black-strong" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Strong mask</h3>
-              <p>Fifth text</p>
+              <h3 className="h3-responsive">Fitness Tracker</h3>
+              <p>A full-stack workout tracking application that allows users to view, create, and track daily workouts.</p>
+              <MDBBtn gradient="blue" href="https://github.com/tommyboone/Workout-Tracker">GitHub</MDBBtn>
+              <MDBBtn gradient="blue" href="https://workout-tracker-tb.herokuapp.com/">Website</MDBBtn>
             </MDBCarouselCaption>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="6">
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                src="./images/Note-Taker_App.png"
                 alt="Third slide"
               />
               <MDBMask overlay="black-strong" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Slight Mast</h3>
-              <p>Sixth text</p>
+              <h3 className="h3-responsive">Note Taker</h3>
+              <p>A To-Do List style application that allows users to write and save tasks to be performed, and delete tasks once they've been completed.</p>
+              <MDBBtn gradient="blue" href="https://github.com/tommyboone/Note-Taker">GitHub</MDBBtn>
+              <MDBBtn gradient="blue" href="https://tommyboone.github.io/Note-Taker/">Website</MDBBtn>
             </MDBCarouselCaption>
           </MDBCarouselItem>
         </MDBCarouselInner>
