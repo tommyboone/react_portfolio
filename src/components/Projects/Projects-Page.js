@@ -1,15 +1,13 @@
 import React from "react";
 import ProjectList from "../../Project-List.json";
-import "./Projects.css"
+import "./Projects.css";
 import {
   MDBBtn,
-  MDBContainer,
   MDBCard,
   MDBCardBody,
   MDBCardImage,
   MDBCardTitle,
   MDBCardText,
-  MDBRow,
   MDBCol,
   MDBView,
 } from "mdbreact";
@@ -53,44 +51,39 @@ class ProjectCard extends React.Component {
   render() {
     return ProjectList.map(({ data }) => {
       return (
-        <MDBContainer fluid>
+        <MDBCol md="4">
+          <MDBCard wide cascade className="project-card">
+            <MDBView cascade>
+              <MDBCardImage
+                hover
+                overlay="white-slight"
+                className="card-img-top"
+                src={data.img}
+                alt="picture of project"
+              />
+            </MDBView>
 
-          <MDBRow>
-              <MDBCol md="4" />
-            <MDBCol md="4">
-              <MDBCard wide cascade className="project-card"> 
-                <MDBView cascade>
-                  <MDBCardImage
-                    hover
-                    overlay="white-slight"
-                    className="card-img-top"
-                    src={data.img}
-                    alt="picture of project"
-                  />
-                </MDBView>
+            <MDBCardBody cascade className="text-center">
+              <MDBCardTitle className="card-title ">
+                <strong>{data.title}</strong>
+              </MDBCardTitle>
 
-                <MDBCardBody cascade className="text-center">
-                  <MDBCardTitle className="card-title ">
-                    <strong>{data.title}</strong>
-                  </MDBCardTitle>
+              <MDBCardText>{data.description}</MDBCardText>
 
-                  <MDBCardText>{data.description}</MDBCardText>
-
-                  <MDBCol md="12" className="d-flex justify-content-center">
-                    <MDBBtn gradient="blue" href={data.github}>
-                      Github
-                    </MDBBtn>
-                    <MDBBtn gradient="blue" href={data.website}>
-                      Website
-                    </MDBBtn>
-                  </MDBCol>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
+              <MDBCol md="12" className="d-flex justify-content-center">
+                <MDBBtn gradient="blue" href={data.github}>
+                  Github
+                </MDBBtn>
+                <MDBBtn gradient="blue" href={data.website}>
+                  Website
+                </MDBBtn>
+              </MDBCol>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
       );
     });
   }
 }
+
 export default ProjectCard;

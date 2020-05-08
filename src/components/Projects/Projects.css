@@ -2,9 +2,12 @@
     height:700px;
 }
 .project-card{
-    border:1px solid darkgray;
+    border:0 1 1 1px solid darkgray;
     box-shadow: 10px darkgray;
     border-radius:75px;;
+    margin-bottom:5px;
+    padding-bottom:5px;
+    padding-top:5px;
 }
 
 .card-title{
