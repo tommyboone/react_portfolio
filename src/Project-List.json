@@ -22,7 +22,7 @@
     "key":3,
     "data":{
     "title": "Travel Master",
-    "description": "A travel application where users can learn more about the places they are visiting",
+    "description": "A travel application where users can learn more about the places they are visiting. Utilizing REST and Google Maps API's and the Foundation CSS framework.",
     "img": "./images/travel-master.png",
     "github":"https://github.com/stevekindt/Project-1",
     "website":"https://stevekindt.github.io/Project-1/"
