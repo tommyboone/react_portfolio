@@ -21,26 +21,29 @@ function About() {
             {" "}
             <FontAwesomeIcon icon={faHandPaper} className="fa-3x" />
             <p id="info1" className="info">
-              Hello - Tommy here! I am Full-Stack Web Developer currently living
+              Hello - Tommy here! I am a Full-Stack Web Developer currently living
               in Minneapolis. I have experience with HTML, CSS, JavaScript,
-              jQuery, CI platforms, templating engines, the MERN Stack, and
+              jQuery, CI platforms, templating engines, the MERN Stack, Git, SQL, and
               several other programming languages.{" "}
             </p>
           </MDBCol>
           <MDBCol>
             {" "}
-            <FontAwesomeIcon icon={faGlobe} className="fa-3x" />
-            <p id="info2" className="info">
-              I'm extremely passionate about web development and it's ability to
-              solve real-world problems.......... mOre StuFf HeRe LaTeR.....
+            <FontAwesomeIcon icon={faLaptop} className="fa-3x" />
+            <p id="info2" className="info">    
+            Most Recently, I decided to expand my skill set by enrolling in
+              The Coding Bootcamp at the University of Minnesota. Currently
+              seeking a Full-Time Opportunity as a developer{" "}
+           
             </p>
           </MDBCol>
           <MDBCol>
-            <FontAwesomeIcon icon={faLaptop} className="fa-3x" />
+            <FontAwesomeIcon icon={faGlobe} className="fa-3x" />
             <p id="info3" className="info">
-              Most Recently, I decided to expand my skill set by enrolling in
-              The Coding Bootcamp at the University of Minnesota. Currently
-              seeking a Full-Time Opportunity as a developer{" "}
+             I'm passionate about web development and it's ability to
+              solve real-world problems. If you are a business looking to build a web presence or an employer in need of a driven, detail-oriented developer, contact me
+              <a href="/contact"> here</a>.{" "}
+
             </p>
           </MDBCol>
         </MDBRow>
