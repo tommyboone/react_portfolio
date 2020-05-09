@@ -19,3 +19,8 @@
 # Heroku Link
 
    https://tommy-boone.herokuapp.com/
+   
+# Contact Info
+
+Email: tommyboone23@gmail.com
+Phone: (919)390-4006
