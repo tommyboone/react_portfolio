@@ -63,6 +63,7 @@ class Contact extends Component {
                   label="Your Name"
                   name={this.state.name}
                   value={this.state.value}
+                  id="name"
                   onChange={this.handleChange}
                   icon="user"
                   group
@@ -71,6 +72,7 @@ class Contact extends Component {
                 <MDBInput
                   label="E-mail address"
                   icon="envelope"
+                  id="email"
                   name={this.state.email}
                   group
                   value={this.state.value}
@@ -79,6 +81,7 @@ class Contact extends Component {
                 />
                 <MDBInput
                   label="Subject"
+                  id="subject"
                   name={this.state.subject}
                   icon="tag"
                   group
@@ -88,6 +91,7 @@ class Contact extends Component {
                 />
                 <MDBInput
                   type="textarea"
+                  id="message"
                   rows="2"
                   value={this.state.value}
                   onChange={this.handleChange}
