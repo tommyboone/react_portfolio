@@ -4,15 +4,17 @@ const express = require("express");
 const app = express();
 const port = 3001;
 
-
-var bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
 app.use(bodyParser.json()); // to support JSON-encoded bodies
 app.use(
   bodyParser.urlencoded({
-    // to support URL-encoded bodies
+       // to support URL-encoded bodies
     extended: true,
   })
 );
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
 
 app.post("/emails", (req, res) => {
   let name = req.body.name;
@@ -24,7 +26,7 @@ app.post("/emails", (req, res) => {
     text:
       "Hey!\n\n" +
       ` Someone has contacted you through your website. Here is their contact information and message: \n\n` +
-      `First Name: ${name} \n` +
+      `Name: ${name} \n` +
       `Email Address: ${email} \n` +
       `Message: ${message} \n\n`,
     subject: `${subject}`,
