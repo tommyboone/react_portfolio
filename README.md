@@ -1,5 +1,8 @@
 # Portfolio
 
+# Stack
+   Built using a Node Express Server, React, MDBootstrap-React, Node-mailer, dotenv, and React-Router-Dom
+
 # Screenshot
 ![alt text](./public/images/Homepage.png)
 
