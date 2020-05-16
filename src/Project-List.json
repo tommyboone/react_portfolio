@@ -54,11 +54,19 @@
     "data":{
     "title": "Note Taker",
     "description": "A To-Do List style application that allows users to write and save tasks to be performed, and delete tasks once they've been completed. Built using an Express backend and Bootstrap framework",
-    "img": "./images/Note-Taker_App.png",
+    "img": "./images/Google-Books-Search.png",
     "github":"https://github.com/tommyboone/Note-Taker",
     "website":"https://tommyboone.github.io/Note-Taker/"    
     }
  
+},{
+    "key":7,
+    "data":{
+    "title": "Google Books React Search",
+    "description": "A Search application that allows users to search for a book, save a book of interest, and delete when they're done. Built using the MERN stack and integrated with the Google Books API",
+    "img": "./images/Note-Taker_App.png",
+    "github":"https://github.com/tommyboone/Google-Books-Search",
+    "website":"http://google-books-tb.herokuapp.com/"    
+    }
 }
-
 ]
