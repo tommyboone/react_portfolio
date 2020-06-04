@@ -68,5 +68,15 @@
     "github":"https://github.com/tommyboone/Google-Books-Search",
     "website":"http://google-books-tb.herokuapp.com/"    
     }
+},
+{
+    "key":8,
+    "data":{
+    "title": "Sugar Rush",
+    "description": "A full-stack food delivery application that connects users with their favorie local desserts. Built using the MERN stack, passport authentication, and the Materialize framework.",
+    "img": "./images/Sugar-Rush.png",
+    "github":"https://github.com/laurenhallau/Sugar-Rush",
+    "website":"https://sugar-gold-rush.herokuapp.com/"    
+    }
 }
 ]
